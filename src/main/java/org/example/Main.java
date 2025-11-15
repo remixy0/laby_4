@@ -18,5 +18,23 @@ public class Main {
     adminPanel.showUsers();
 
 
+    Employee employee1 = new Employee("Marek","Kowalski","acountant");
+    Device device1 = new Device("Monitor","Acer","X27U");
+    Device device2 = new Device("Computer","Dell","2X34D");
+
+    Employee employee2 = new Employee("Andrzej","Smith","manager");
+    Device device3 = new Device("laptop","HP","D2RT");
+    Device device4 = new Device("Mouse","logitech","G-Pro");
+
+    BookingSystem bookingSystem = new BookingSystem();
+
+    bookingSystem.bookDevice(employee1,device1);
+    bookingSystem.bookDevice(employee1,device2);
+
+    bookingSystem.bookDevice(employee2,device3);
+    bookingSystem.bookDevice(employee2,device4);
+
+    bookingSystem.showActiveBookings();
+
     }
 }
