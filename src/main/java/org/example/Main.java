@@ -36,5 +36,18 @@ public class Main {
 
     bookingSystem.showActiveBookings();
 
+
+
+    DataCenter dataCenter = new DataCenter();
+
+    Server2 server2 = new Server2();
+    NetworkSwitch networkSwitch = new NetworkSwitch();
+
+    dataCenter.addServer(server2);
+    dataCenter.addServer(server2);
+    dataCenter.addSwitch(networkSwitch);
+    dataCenter.showInfrasctructure();
+
+
     }
 }
