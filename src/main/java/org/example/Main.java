@@ -57,5 +57,21 @@ public class Main {
     database.getTotalRecords();
 
 
+    WebApplication webApplication = new WebApplication("Company","1.2",true);
+    Developer2 developer = new Developer2("Marek","Admin");
+    Module module = new Module("Strona","companys new website","1.3.2");
+    Developer2 developer2 = new Developer2("Stefan","Admin");
+    Module module2 = new Module("Aplikacja","companys new website","1.3.2");
+
+    webApplication.addModule(module);
+    webApplication.assignDeveloperToModule(module, developer);
+
+    webApplication.addModule(module2);
+    webApplication.assignDeveloperToModule(module2, developer2);
+
+    webApplication.showModules();
+
+
+
     }
 }
