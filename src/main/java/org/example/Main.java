@@ -48,6 +48,14 @@ public class Main {
     dataCenter.addSwitch(networkSwitch);
     dataCenter.showInfrasctructure();
 
+    Database database = new Database();
+    Table table = new Table("tabelka1",6,8);
+    Table table2 = new Table("tabelka2",4,12);
+    database.adddTable(table);
+    database.adddTable(table2);
+    database.showTables();
+    database.getTotalRecords();
+
 
     }
 }
